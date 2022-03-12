@@ -11,10 +11,15 @@ git clone -b compatibility-changes --depth=1 https://github.com/RetricSu/godwoke
 cd kicker
 make init
 make start
+
+//stop network
+cd kicker/docekr
+docker-compose down -v
 ```
 
 ## Run contract test
 ```sh
+npm install
 npx hardhat test --network gw_devnet_v1
 ```
 

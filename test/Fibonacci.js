@@ -1,8 +1,8 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Recursion Contract", function () {
-  it("Deploy and call recursive functions", async () => {
+describe("Fibonacci Contract", function () {
+  it("Deploy and call fibonacci functions", async () => {
     const contractFact = await ethers.getContractFactory("Fibonacci");
     const recurContract = await contractFact.deploy();
     await recurContract.deployed();
