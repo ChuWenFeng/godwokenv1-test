@@ -15,6 +15,6 @@ make start
 
 ## Run contract test
 ```sh
-    npx hardhat test --network gw_devnet_v1
+npx hardhat test --network gw_devnet_v1
 ```
 
