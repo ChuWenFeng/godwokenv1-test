@@ -1,6 +1,7 @@
 pragma solidity ^0.8;
 
 contract Fibonacci{
+    // external 外部调用，只能用外部调用的方式调用此函数(this,call)
     function indexNum(uint n)external view returns(uint){
         if (n <= 0){
             return 0;
